@@ -25,26 +25,22 @@
     <title>陆飞侠</title>
     
   </head>
-  <body class="mdui-theme-primary-red mdui-theme-accent-pink">
-    <div id="CountMsg" class="mdui-toolbar mdui-color-theme mdui-shadow-5 HotDate">
-
+  <body class="mdui-theme-primary-green mdui-theme-accent-pink">
+    <div class="mdui-toolbar mdui-color-theme mdui-shadow-5">
+      <a href="/index.html" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">home</i></a>
+      <span class="mdui-typo-title">陆飞侠</span>
       <div class="mdui-toolbar-spacer"></div>
-      <span>2021倒计时:</span>
-
-      <span id="t_h">00时</span> 
-      <span id="t_m">00分</span> 
-      <span id="t_s">00秒</span> 
       <a onclick="javascript:location.reload();"class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
-      
+      <a href="https://github.com/PeterTea5822/petertea5822.github.io" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">bubble_chart</i></a>
     </div>
     <br/>
     <br/>
     <div class="mdui-typo">
     <blockquote>
       <p>
-        新年快乐!!!
+        我走上了一条比记忆还要长的路。陪伴着我的，是朝圣者般的孤独。我脸上带着微笑，心中却充满悲苦。
       </p>
-      <footer>——Peter_Tea</footer>
+      <footer>——切·格瓦拉</footer>
     </blockquote>
     <br/>
     <hr/>
@@ -57,30 +53,5 @@
       <li><a href="./testm.html" class="mdui-btn mdui-btn-raised mdui-color-theme-accent">翔翔福利🙈</a></li>
     </ul>
     </div>
-    <script type="text/javascript"> 
-      function getRTime(){ 
-      var EndTime= new Date('2021/1/1 00:00:00'); //截止时间 
-      var NowTime = new Date(); 
-      var t =EndTime.getTime() - NowTime.getTime(); 
-      /*var d=Math.floor(t/1000/60/60/24); 
-      t-=d*(1000*60*60*24); 
-      var h=Math.floor(t/1000/60/60); 
-      t-=h*60*60*1000; 
-      var m=Math.floor(t/1000/60); 
-      t-=m*60*1000; 
-      var s=Math.floor(t/1000);*/ 
-      
-      
-      var h=Math.floor(t/1000/60/60%24); 
-      var m=Math.floor(t/1000/60%60); 
-      var s=Math.floor(t/1000%60); 
-      
-      
-      document.getElementById("t_h").innerHTML = h + "时"; 
-      document.getElementById("t_m").innerHTML = m + "分"; 
-      document.getElementById("t_s").innerHTML = s + "秒"; 
-      } 
-      setInterval(getRTime,1000); 
-      </script>
   </body>
 </html>
